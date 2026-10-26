@@ -1,0 +1,46 @@
+.header1 {
+    background-color:#444 ;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.inner {
+   
+    height: 100%;
+    width: 1024px;
+    display: flex;
+    align-items: center;
+}
+.line {
+    background-color: #666;
+    width: 2px;
+    height: 18.4px;
+    margin-left: 15px;
+}
+.word {
+    color: white;
+}
+.header2 {
+    background-color: #000;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+}
+.item {
+    flex: 1;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo {
+    height: 100%;
+    width: auto;
+    
+     object-fit: cover; /* Giữ tỉ lệ ảnh, tự động cắt phần thừa để lấp kín div */
+  /* Hoặc dùng: object-fit: contain; (nếu muốn thấy toàn bộ ảnh mà không bị cắt, nhưng có thể bị hở viền) */
+  display: block; /* Loại bỏ khoảng trắng thừa dưới chân ảnh */
+  filter: invert(1); 
+}

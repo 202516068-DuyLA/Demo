@@ -44,3 +44,49 @@
   display: block; /* Loại bỏ khoảng trắng thừa dưới chân ảnh */
   filter: invert(1); 
 }
+.container {
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    margin-top: -550px;
+    
+}
+.cuahanggiaoduc {
+    color: white;
+    font-size: xx-large;
+    padding-top: 50px;
+    padding-left: 180px;
+    max-width: 320px;
+    font-size: 70px; /* Thay đổi số này để tăng/giảm cỡ chữ (ví dụ: 48px, 64px, 72px) */
+  font-weight: 700; /* Làm chữ dày/đậm lên (700 = bold, 800-900 = heavy/black) */
+  line-height: 1.1; /* Khoảng cách giữa các dòng chữ (giúp các dòng không bị đè lên nhau) */
+}
+.daihocsansang {
+   
+    min-height: 50px;
+    min-width: 100px;
+    margin-top: -150px;
+    margin-left: 1000px;
+    display: flex;
+    align-items: center;
+}
+.daihoc {
+    color: white;
+    max-width: 320px;
+    font-size: 35px; /* Thay đổi số này để tăng/giảm cỡ chữ (ví dụ: 48px, 64px, 72px) */
+  font-weight: 700; /* Làm chữ dày/đậm lên (700 = bold, 800-900 = heavy/black) */
+  line-height: 1.1; 
+}
+.sansang {
+    margin-left: 5px;
+    height: 100%;
+    width: 150px;
+    background-color: blue
+}
+.ss {
+    
+    max-width: 320px;
+    font-size: 35px; /* Thay đổi số này để tăng/giảm cỡ chữ (ví dụ: 48px, 64px, 72px) */
+  font-weight: 700; /* Làm chữ dày/đậm lên (700 = bold, 800-900 = heavy/black) */
+  line-height: 1.1;
+}

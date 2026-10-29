@@ -106,14 +106,16 @@ body {
     margin-left: 5px;
     height: 100%;
     width: 150px;
-    background-color: blue
+    
 }
 .ss {
     
-    max-width: 320px;
-    font-size: 35px; /* Thay đổi số này để tăng/giảm cỡ chữ (ví dụ: 48px, 64px, 72px) */
-  font-weight: 700; /* Làm chữ dày/đậm lên (700 = bold, 800-900 = heavy/black) */
-  line-height: 1.1;
+   font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4;
+    background-color: #00e5f5;
+    color: #111;
 }
 .wrapper {
   
@@ -144,4 +146,131 @@ body {
 .imgdevice {
     height: 40%;
     width: auto;
+}
+.heading {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-left: 175px;
+    margin-top: 30px;
+}
+
+.highlight {
+    color: #111;
+    background-color: #00e5f5;
+}
+
+.subtitle {
+    color: #737373;
+}
+.imgs {
+    margin-top: 30px;
+    height: 500px;
+    min-width: 400px;
+    position: relative;
+    margin-left: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.imgs:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.photo3 {
+    height: 100%;
+    width: auto;
+    border-radius: 5%;
+}
+.label {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    color: #ff4d00;
+    font-size: 12px;
+}
+.product-title {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+}
+.detail {
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+.next-btn {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    background-color: #e3e3e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    
+    z-index: 10;
+    
+}
+
+.next-btn span {
+    width: 17px;
+    height: 17px;
+    border-top: 6px solid #666;
+    border-right: 6px solid #666;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    margin-left: -6px;
+}
+.next-btn:hover {
+    background-color: #d1d1d4;
+}
+.pre-btn {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    background-color: #e3e3e5;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    
+}
+
+.pre-btn span {
+    width: 17px;
+    height: 17px;
+    border-left: 6px solid #666;
+    border-bottom: 6px solid #666;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    margin-left: 6px;
+}
+
+.pre-btn:hover {
+    background-color: #d1d1d4;
+}
+.image-track {
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng chuyển động mượt */
 }

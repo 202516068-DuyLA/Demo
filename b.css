@@ -274,3 +274,48 @@ body {
 .image-track {
     transition: transform 0.3s ease-in-out; /* Hiệu ứng chuyển động mượt */
 }
+
+
+.globalfooter-content {
+    margin: 0 auto; /* Căn giữa nội dung footer */
+    max-width: 980px; /* Giới hạn chiều rộng tối đa của footer, tránh bị kéo dài khi màn hình có width to */
+    padding: 0 22px;
+}
+
+.footnotes {
+    font-size: 12px;
+    font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #6e6e73;
+    padding: 17px 0 11px;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.footnotes-list {
+    list-style: none; /* Loại bỏ dấu chấm đầu dòng */
+    padding: 0; /* Loại bỏ padding mặc định của ul */
+}
+.footnote-item {
+    padding-bottom: 8px;
+}
+
+.globalfooter-content a {
+    color: #58585c; /* Màu chữ của link */
+    text-decoration: underline; /* Loại bỏ gạch chân mặc định */
+}
+
+.globalfooter-breadcrumbs {
+    display: flex;
+    align-items: center;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.globalfooter-breadcrumbs img {
+    width: 15px; /* Kích thước logo Apple */
+    height: auto; /* Giữ tỉ lệ ảnh */
+}
+.breadcrumbs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

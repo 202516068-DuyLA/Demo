@@ -299,11 +299,12 @@ body {
 }
 
 .globalfooter-content a {
-    color: #58585c; /* Màu chữ của link */
-    text-decoration: underline; /* Loại bỏ gạch chân mặc định */
+    color: #58585c;
+    text-decoration: underline;
 }
 
 .globalfooter-breadcrumbs {
+    padding: 17px 0;
     display: flex;
     align-items: center;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -319,3 +320,74 @@ body {
     padding: 0;
     margin: 0;
 }
+
+.globalfooter-directory {
+    display: flex;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: -0.01em;
+}
+
+.directory-column {
+    flex-basis: 20%;
+}
+
+.directory-column h3 {
+    margin: 0;
+}
+
+.directory-column ul {
+    padding: 0;
+}
+
+.directory-column li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.directory-column a {
+    text-decoration: none;
+}
+.directory-column a:hover {
+    text-decoration: underline;
+}
+
+.globalfooter-mini {
+    color: #58585c;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.globalfooter-mini-shop {
+    border-bottom: 1px solid #d2d2d7;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+}
+
+.globalfooter-mini-end {
+    display: flex;
+    justify-content: space-between;
+}
+.globalfooter-mini-end a {
+    text-decoration: none;
+}
+.globalfooter-mini-end a:hover {
+    text-decoration: underline;
+}
+.mini-legal p {
+    margin: 0;
+}
+.mini-legal ul {
+    list-style: none;
+    padding: 0;
+}
+.mini-legal li {
+    display: inline;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid ;
+}
+
+.mini-legal li:last-child {
+    border-right: 0px;
+}
+

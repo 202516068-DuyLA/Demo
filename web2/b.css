@@ -68,3 +68,185 @@ body {
     object-fit: contain;
     cursor: pointer;
 }
+
+.stickybar {
+    background-color: #fff;
+    position: fixed; /* element nay co dinh o 1 cho, khi scroll thi ko thay doi vi tri */
+    top: 0; /* đưa element lên điểm cao nhất trang, */
+    width: 100%; /* giãn bar đến 2 đầu trái phải */
+    z-index: 9999; /* set z index cao để đè lên các element khác có z index thấp hơn */
+    transform: translateY(-100%); /* ban đầu, giấu bar lên trên */
+    transition: transform .5s ease-in-out; /* tạo animation chuyển động mượt khi di chuyển bar */
+}
+/* elements that have both class stickybar and visible */
+.stickybar.visible { 
+    transform: translateY(0);
+}
+
+.stickybar-header {
+    padding: 10px 0;
+    height: 29px;
+    border-bottom: 1px solid #e8e8ed;
+    display: flex;
+    align-items: center;
+}
+
+.stickybar-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-size: 17px;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+.stickybar-header a {
+    color: rgb(29,29,31);
+    text-decoration: none;
+}
+
+.stickybar-fulfillment {
+    height: 29px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e8e8ed;
+}
+
+.stickybar-fulfillment-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+    font-size: 15px;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+
+#transport-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 6px;
+}
+
+.center-adjust {
+    margin: auto; /* adjust to center */
+    min-width: 980px;
+    max-width: 2632px;
+    width: 87.5%; /* Lay 87.5% width man hinh, dam bao tao khoang cach voi 2 edge cua man hinh */
+}
+
+.globalfooter-content {
+    margin: 0 auto; /* Căn giữa nội dung footer */
+    max-width: 980px; /* Giới hạn chiều rộng tối đa của footer, tránh bị kéo dài khi màn hình có width to */
+    padding: 0 22px;
+}
+
+.footnotes {
+    font-size: 12px;
+    font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #6e6e73;
+    padding: 17px 0 11px;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.footnotes-list {
+    list-style: none; /* Loại bỏ dấu chấm đầu dòng */
+    padding: 0; /* Loại bỏ padding mặc định của ul */
+}
+.footnote-item {
+    padding-bottom: 8px;
+}
+
+.globalfooter-content a {
+    color: #58585c;
+    text-decoration: underline;
+}
+
+.globalfooter-breadcrumbs {
+    padding: 17px 0;
+    display: flex;
+    align-items: center;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.globalfooter-breadcrumbs img {
+    width: 15px; /* Kích thước logo Apple */
+    height: auto; /* Giữ tỉ lệ ảnh */
+}
+.breadcrumbs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.globalfooter-directory {
+    display: flex;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: -0.01em;
+}
+
+.directory-column {
+    flex-basis: 20%;
+}
+
+.directory-column h3 {
+    margin: 0;
+}
+
+.directory-column ul {
+    padding: 0;
+}
+
+.directory-column li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.directory-column a {
+    text-decoration: none;
+}
+.directory-column a:hover {
+    text-decoration: underline;
+}
+
+.globalfooter-mini {
+    color: #58585c;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.globalfooter-mini-shop {
+    border-bottom: 1px solid #d2d2d7;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+}
+
+.globalfooter-mini-end {
+    display: flex;
+    justify-content: space-between;
+}
+.globalfooter-mini-end a {
+    text-decoration: none;
+}
+.globalfooter-mini-end a:hover {
+    text-decoration: underline;
+}
+.mini-legal p {
+    margin: 0;
+}
+.mini-legal ul {
+    list-style: none;
+    padding: 0;
+}
+.mini-legal li {
+    display: inline;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid ;
+}
+
+.mini-legal li:last-child {
+    border-right: 0px;
+}

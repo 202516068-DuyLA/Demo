@@ -1,0 +1,70 @@
+body {
+    margin: 0; /* cho body cover hết màn, không có phần margin trắng bao quanh */
+}
+
+.header1 {
+    background-color:#f5f5f7 ;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.inner {
+    padding: 0 22px; /* Thêm padding trái và phải, để phần inner ko chạm edge màn hình khi thu nhỏ web */
+    height: 100%;
+    width: 1024px;
+    display: flex;
+    align-items: center;
+}
+.line {
+    background-color: #666;
+    width: 1px;
+    height: 18.4px;
+    margin-left: 15px;
+}
+
+.word {
+    font-size: 12px;
+    color: #1d1d1f;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header1_word {
+    text-decoration: none; /* Loại bỏ underline default của <a> */
+}
+.header1_word:hover {
+    text-decoration: underline; /* Thêm gạch chân khi hover */
+}
+
+.header2_word {
+    color: #1d1d1f;
+    text-decoration: none; /* Loại bỏ underline default của <a> */
+}
+.header2_word:hover {
+    cursor: pointer; /* Thay đổi màu chữ khi hover */
+}
+
+
+.header2 {
+    background-color: #fff;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+}
+.item {
+    flex: 1;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    cursor: pointer;
+}

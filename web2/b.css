@@ -69,6 +69,101 @@ body {
     cursor: pointer;
 }
 
+
+.wrapper {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    flex: 1;
+    height: 100%;
+    
+}
+.right {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.left h1 {
+    margin-top: 70px;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 550;
+    letter-spacing: -.003em;
+    line-height: 1.0834933333;
+    max-height: 35px;
+}
+.left span {
+    margin-top: -10px;
+    color: rgb(29, 29, 31);
+    display: block;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-synthesis-small-caps: none;
+    font-synthesis-style: none;
+    font-synthesis-weight: none;
+    font-weight: 400;
+    height: 25px;
+    letter-spacing: -0.374px;
+    line-height: 25px;
+    
+    text-size-adjust: 100%
+   
+   
+}
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #1d1d1f;
+    margin-top: 10px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.education {
+    color: #008577;
+}
+
+.apple {
+    color: #75634c;
+    font-size: 25px;
+}
+
+.info-item a {
+    color: #06c;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
+
+.plus {
+    font-size: 15px;
+    line-height: 1;
+}
+.nhan {
+    background-color: #f5f5f7 ;
+    width: 270px;
+    height: 35px;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    font-size: 15px;
+    
+}
 .stickybar {
     background-color: #fff;
     position: fixed; /* element nay co dinh o 1 cho, khi scroll thi ko thay doi vi tri */

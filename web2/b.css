@@ -72,7 +72,6 @@ body {
 
 .wrapper {
     height: 100%;
-    width: 90%;
     display: flex;
     justify-content: space-between;
 }
@@ -225,7 +224,7 @@ body {
 }
 
 .center-adjust {
-    margin: auto; /* adjust to center */
+    margin: 0 auto; /* adjust to center */
     min-width: 980px;
     max-width: 2632px;
     width: 87.5%; /* Lay 87.5% width man hinh, dam bao tao khoang cach voi 2 edge cua man hinh */

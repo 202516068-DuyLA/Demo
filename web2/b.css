@@ -121,6 +121,9 @@ body {
    
    
 }
+.nhan:hover  .plus {
+    background-color: black;
+}
 .info-item {
     display: flex;
     align-items: center;
@@ -236,7 +239,65 @@ body {
     max-width: 2632px;
     width: 87.5%; /* Lay 87.5% width man hinh, dam bao tao khoang cach voi 2 edge cua man hinh */
 }
+.block {
+    margin-left: 150px;
+    width: 85%;
+    min-height: 750px;
+    background-color: gray;
+    display: flex;
+    position: relative;
+}
+.left1 {
+    flex: 2;
+    background-color: red;
+    position: relative;
+}
+.right1 {
+    flex: 1;
+    height: 1500px;
+    background-color: green;
+}
+.photo3 {
+    width: 100%;
+    height: auto;
+}
+.wrapper2 {
+    height: 100%;
+    width: 65%;
+    display: flex;
+}
+.items {
+    height: 100%;
+    flex: 1;
+    background-color: #f5f5f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+}
+.hop {
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.1;
+    text-align: center;
+}
+.photo2 {
+    height: 90%;
+    width: auto
+    
+}
+
+.typography-body-reduced {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.4285914286;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
 .globalfooter-content {
     margin: 0 auto; /* Căn giữa nội dung footer */
     max-width: 980px; /* Giới hạn chiều rộng tối đa của footer, tránh bị kéo dài khi màn hình có width to */

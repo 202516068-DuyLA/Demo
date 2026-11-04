@@ -501,3 +501,58 @@ body {
 .placeholder {
     height: 2000px;
 }
+.decoration-wrapper {
+    margin-top: 150px;
+    height: 481px;
+    width: 100%;
+    background-color: #86e6e7;
+    display: flex;
+    justify-content: center;
+}
+.decoration-main {
+    height: 100%;
+    width: 70%;
+    background-color: red;
+    position: relative;
+}
+.photo4 {
+    width: auto;
+    height: 100%;
+}
+.word2 {
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    max-width: 500px;
+    color: #1d1d1f;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.word3 {
+    position: absolute;
+    top: 250px;
+    left: 70px;
+   
+    font-size: 17px; /* Kích thước chữ */
+    font-weight: 400; /* Độ dày chữ cơ bản (Regular) */
+    line-height: 1.47059; /* Khoảng cách giữa 2 dòng */
+    letter-spacing: -.022em; /* Khoảng cách giữa các chữ cái */
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-width: 450px; /* Giới hạn chiều rộng để đoạn text tự động bẻ xuống dòng giống trong ảnh */
+}
+.avt {
+    position: fixed;
+    bottom: 20px; /* Cách mép dưới màn hình 20px */
+    right: 20px;  /* Cách mép phải màn hình 20px */
+    z-index: 999; /* Đảm bảo phần tử luôn nổi lên trên cùng, không bị các nội dung khác che khuất khi cuộn */
+    width: 60px; /* Điều chỉnh kích thước tùy ý, nhưng width và height phải bằng nhau */
+    height: 60px; 
+    border-radius: 50%; /* Cắt ảnh thành hình tròn hoàn hảo */
+    background-color: #bce0fd; /* Màu nền xanh lơ nhạt giống trong ảnh */
+    object-fit: cover; /* Giảm thiểu tình trạng ảnh bị méo nếu tỷ lệ gốc không phải hình vuông */
+    /* Có thể thêm viền mờ nếu muốn giống sát ảnh mẫu hơn */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}

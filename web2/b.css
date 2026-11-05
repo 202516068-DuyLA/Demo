@@ -582,6 +582,10 @@ fieldset {
     margin: 0;
 }
 
+.form-field {
+    margin-bottom: 60px;
+}
+
 .field-title {
     margin-top: 0;
     margin-bottom: 13px;
@@ -611,6 +615,7 @@ fieldset {
     cursor: pointer;
 }
 .field-selector-label {
+    min-height: 4.8823529412rem;
     box-sizing: border-box; /* tính cả content + padding + border vào trong width */
     cursor: pointer;
     border-radius: 12px;
@@ -639,6 +644,113 @@ fieldset {
     flex-flow: row wrap;
     justify-content: space-between;
     width: 100%;
+}
+
+.applecare-row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+}
+
+#red-apple-icon {
+    height: 20px;
+    width: auto;
+    padding-right: 2px;
+}
+
+.applecare-header {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #86868b;
+}
+
+.applecare-label-small {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 4px;
+}
+
+.applecare-desc-list {
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 15px;
+}
+.desc-list-item {
+    padding-bottom: 10px;
+    padding-right: 15px;
+}
+
+#graduation-hat {
+    height: 17px;
+    width: auto;
+}
+
+.applecare-savingmsg {
+    display: flex;
+    width: 100%;
+}
+
+.applecare-savingmsg span {
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 3px;
+}
+
+.form-summary-border{
+    border-top: 1px solid #d2d2d7;
+    margin: 22px 0;
+}
+
+.form-price-content {
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding-top: 16px;
+    padding-bottom: 40px;
+}
+
+.prices-price {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.prices-footer {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.summary-button-box {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+.add-cart-container {
+    display: flex;
+    align-items: center;
+    background: #0071e3;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+.add-cart-button {
+    padding: 8px 15px;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+}
+
+.summary-button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+.add-favors-button {
+    margin-left: 15px;
+}
+
+#heart {
+    height: 25px;
+    width: auto;
 }
 
 .column {
@@ -689,6 +801,16 @@ fieldset {
     font-weight: 600;
     padding-right: 0px;
 }
+
+.decision-desc {
+    padding-top: 3px;
+}
+
+.decision-footer {
+    color: #6e6e73;
+    padding-top: 7px;
+}
+
 .decision-add-button {
     position: absolute;
     right: 6px;
@@ -703,6 +825,16 @@ fieldset {
     font-size: 12px;
     font-weight: 400;
 }
+
+.badge {
+    display: block;
+    padding-top: 3px;
+    font-size: 12px;
+    color: rgb(182, 68, 0);
+}
+
+
+
 
 .decoration-wrapper {
     margin-top: 150px;

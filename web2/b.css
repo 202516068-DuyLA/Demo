@@ -497,7 +497,7 @@ body {
 
 .form-left-column {
     min-width: 0; /* set this to 0 so this element can shrink size, instead of having width >= children's width */
-    flex-basis: 70%;
+    flex-basis: 65%;
     padding-inline-end: 40px;
     height: calc(100vh - 120px);;
     min-height: 540px;
@@ -573,11 +573,137 @@ body {
 }
 
 .form-right-column {
-    flex-basis: 30%;
+    flex-basis: 35%;
 }
-.placeholder {
-    height: 2000px;
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
 }
+
+.field-title {
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.field-subheading {
+    color: #86868b;
+}
+
+
+.field-selector {
+    margin-top: .82rem;
+    position: relative;
+    display: flex;
+}
+
+.field-selector-input {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+.field-selector-label {
+    box-sizing: border-box; /* tính cả content + padding + border vào trong width */
+    cursor: pointer;
+    border-radius: 12px;
+    border: 1px solid #86868b;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.field-selector-input:checked ~ .field-selector-label {
+    border: 2px solid #0071e3;
+    padding: 14px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.column {
+    box-sizing: border-box;
+}
+
+.left-col {
+    flex-basis: 60%;
+    text-align: start;
+    position: relative;
+    align-self: center;
+}
+
+.field-label-small {
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.right-col {
+    flex-basis: 40%;
+    text-align: end;
+    align-self: center;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+.decision-support {
+    display: flex;
+    position: relative;
+    background: #f5f5f7;
+    border-radius: 12px;
+    width: 100%;
+    margin-top: 16px;
+    cursor: pointer;
+
+}
+
+.decision-info {
+    padding: 1rem 16px; 
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.decision-header {
+    font-weight: 600;
+    padding-right: 0px;
+}
+.decision-add-button {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+#add-button-img {
+    height: 14px;
+    width: auto;
+}
+
+.typography-caption {
+    font-size: 12px;
+    font-weight: 400;
+}
+
 .decoration-wrapper {
     margin-top: 150px;
     height: 481px;

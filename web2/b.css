@@ -346,7 +346,7 @@ body {
 }
 .version__item_name {
     color: #1d1d1f;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600px;color: #1d1d1f; /* Màu chữ đen xám đặc trưng của Apple */
     font-size: 21px; /* Kích thước chữ tiêu đề sản phẩm */
     font-weight: 600; /* Độ đậm vừa phải (Semibold) */
@@ -366,6 +366,90 @@ body {
     width: 90%;
     height: 1px;
     background-color: #d2d2d7; /* Màu đường kẻ xám nhạt đặc trưng của Apple */
+}
+.version__item_para {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #333;
+    height: 5px;
+}
+.line2 {
+    width: 100%;
+    height: 1px;
+    background-color: #d2d2d7;
+}
+.question_container {
+    width: 70%;
+    min-height: 100%;
+}
+.question_container_block1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+}
+.question_container_block1_header {
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .004em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.icon-down, .icon-up {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-right: 4px solid #8f9296; /* Màu xám tương tự trong hình */
+  border-bottom: 4px solid #8f9296;
+  margin: 10px;
+}
+.icon-down, .icon-up:hover {
+    cursor: pointer;
+}
+/* Xoay 45 độ để tạo mũi tên hướng xuống */
+.icon-down {
+  transform: rotate(45deg);
+}
+
+/* Xoay -135 độ (hoặc 225 độ) để tạo mũi tên hướng lên */
+.icon-up {
+  transform: rotate(-135deg);
+}
+.icon_small {
+    width: 10px;
+    height: 10px;
+}
+.word_small {
+    font-size: 15px;
+}
+.block_small {
+    height: 55px;
+}
+.question_container_block2 {
+    min-height: 50px;
+    display: none;
+}
+.question_block2_detail {
+    height: auto;
+    width: 80%;
+    line-height: 1.4285914286;
+    display: none;
+}
+.question_block2_detail_word {
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.016em;
+}
+.icon-down-container {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.icon-down-container:hover {
+    cursor: pointer;
 }
 .typography-body-reduced {
     margin-top: 10px;

@@ -6,6 +6,12 @@ const galleryScroller = document.querySelector(".gallery-scroller");
 const form = document.getElementById("buy-form");
 const colorButtons = document.querySelectorAll('.colornav-input');
 const colorText = document.querySelector(".colornav-header");
+const button_down_large = document.getElementsByClassName("icon-down")[0];
+const button_large_container = document.getElementsByClassName("icon-down-container")[0];
+const block2 = document.querySelector(".question_container_block2");
+const buttons_down_small = document.querySelectorAll(".icon_small");
+const buttons_small_container = document.querySelectorAll(".con_small");
+const block2_detail = document.querySelectorAll(".question_block2_detail");
 
 for (let i=0; i<colorButtons.length; i++){
     colorButtons[i].addEventListener("change", () => {
@@ -52,3 +58,28 @@ navPrev.addEventListener("click", () => {
 
 })
 
+button_large_container.onclick = () => {
+    const thise = button_down_large;
+    if(thise.style.transform == "rotate(45deg)") {
+        thise.style.transform = "rotate(-135deg)";
+        block2.style.display = "block";
+    }
+    else {
+        thise.style.transform = "rotate(45deg)";
+         block2.style.display = "none";
+    }
+}
+
+for(let i=0;i<buttons_down_small.length;i++) {
+    buttons_small_container[i].onclick = () => {
+        const thise = buttons_down_small[i];
+        if(thise.style.transform == "rotate(45deg)") {
+            thise.style.transform = "rotate(-135deg)";
+            block2_detail[i].style.display = "block";
+        }
+        else {
+            thise.style.transform = "rotate(45deg)";
+            block2_detail[i].style.display = "none";
+        }
+    }
+}
